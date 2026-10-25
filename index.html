@@ -1,0 +1,668 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="theme-color" content="#070b13">
+
+<title>King Brand Predictions | Cricket Insights</title>
+
+<meta name="description" content="Explore cricket analysis, toss discussions, session insights and match updates with King Brand Predictions.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--bg:#070b13;
+--gold:#f5ce78;
+--gold2:#a9792b;
+--cyan:#65e6ec;
+--white:#f7f8fc;
+--muted:#8993a6;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html,body{
+width:100%;
+min-height:100%;
+background:var(--bg);
+color:var(--white);
+font-family:'DM Sans',sans-serif;
+overflow-x:hidden;
+}
+
+body{
+background:
+radial-gradient(ellipse at 50% 15%,rgba(199,146,54,.13),transparent 47%),
+radial-gradient(ellipse at 100% 75%,rgba(30,126,147,.09),transparent 50%),
+#070b13;
+}
+
+body:before{
+content:"";
+position:fixed;
+inset:0;
+pointer-events:none;
+opacity:.18;
+background-image:
+linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
+linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+background-size:34px 34px;
+mask-image:linear-gradient(to bottom,black,transparent);
+}
+
+.page{
+position:relative;
+z-index:1;
+width:100%;
+max-width:440px;
+min-height:100svh;
+margin:auto;
+padding:18px 22px 20px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+}
+
+/* TOP BRAND */
+
+.top{
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:15px;
+}
+
+.brand-mini{
+font-family:'Barlow Condensed',sans-serif;
+font-weight:800;
+font-size:17px;
+letter-spacing:2px;
+color:var(--gold);
+}
+
+.brand-mini span{
+color:white;
+}
+
+.live{
+display:flex;
+align-items:center;
+gap:7px;
+font-size:9px;
+letter-spacing:1.2px;
+font-weight:800;
+color:#a5f2ce;
+border:1px solid rgba(94,239,171,.23);
+background:rgba(62,201,130,.06);
+padding:8px 10px;
+border-radius:30px;
+}
+
+.dot{
+height:6px;
+width:6px;
+border-radius:50%;
+background:#55ee9a;
+box-shadow:0 0 10px #55ee9a;
+animation:blink 1.5s infinite;
+}
+
+@keyframes blink{
+50%{opacity:.25}
+}
+
+/* HERO */
+
+.hero{
+width:100%;
+text-align:center;
+}
+
+.logo-area{
+width:156px;
+height:156px;
+position:relative;
+display:grid;
+place-items:center;
+margin:0 auto 12px;
+}
+
+.orbit{
+position:absolute;
+inset:3px;
+border-radius:50%;
+border:1px solid rgba(245,206,120,.18);
+border-top:1px solid var(--gold);
+border-bottom:1px solid var(--gold);
+animation:rotate 12s linear infinite;
+}
+
+.orbit.two{
+inset:13px;
+border:1px dashed rgba(245,206,120,.26);
+animation-direction:reverse;
+animation-duration:20s;
+}
+
+@keyframes rotate{
+to{transform:rotate(360deg)}
+}
+
+.logo-wrap{
+width:112px;
+height:112px;
+border-radius:50%;
+padding:5px;
+background:linear-gradient(145deg,#f9df9c,#81591c,#f5d58b);
+box-shadow:
+0 0 35px rgba(238,176,66,.16),
+0 0 70px rgba(238,176,66,.07);
+}
+
+.logo-wrap img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:50%;
+background:#111927;
+}
+
+.eyebrow{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:9px;
+font-size:9px;
+font-weight:800;
+letter-spacing:3px;
+color:var(--gold);
+margin-bottom:7px;
+}
+
+.eyebrow:before,
+.eyebrow:after{
+content:"";
+width:22px;
+height:1px;
+background:linear-gradient(90deg,transparent,var(--gold));
+}
+
+.eyebrow:after{
+transform:rotate(180deg);
+}
+
+h1{
+font-family:'Barlow Condensed',sans-serif;
+font-size:clamp(44px,12vw,58px);
+font-weight:900;
+line-height:.91;
+letter-spacing:1px;
+text-transform:uppercase;
+}
+
+h1 span{
+display:block;
+background:linear-gradient(110deg,#a9792b,#ffe6a7,#c58c37,#fff0c5);
+-webkit-background-clip:text;
+background-clip:text;
+color:transparent;
+}
+
+.subtitle{
+margin-top:13px;
+font-size:11px;
+line-height:1.7;
+color:#a5afc0;
+letter-spacing:.1px;
+}
+
+.subtitle strong{
+color:#e6eaf3;
+font-weight:600;
+}
+
+/* DIVIDER */
+
+.divider{
+width:100%;
+height:1px;
+background:linear-gradient(90deg,transparent,rgba(245,206,120,.32),transparent);
+margin:19px 0;
+}
+
+/* SERVICES */
+
+.section-label{
+font-size:9px;
+font-weight:800;
+letter-spacing:2.5px;
+color:#8794a8;
+text-align:center;
+margin-bottom:11px;
+}
+
+.services{
+width:100%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:9px;
+}
+
+.service{
+position:relative;
+overflow:hidden;
+min-height:65px;
+padding:12px 13px;
+display:flex;
+align-items:center;
+gap:10px;
+border-radius:11px;
+background:linear-gradient(130deg,rgba(24,34,50,.96),rgba(12,19,30,.96));
+border:1px solid rgba(175,191,217,.11);
+}
+
+.service:before{
+content:"";
+position:absolute;
+top:0;
+left:12px;
+right:12px;
+height:1px;
+background:linear-gradient(90deg,transparent,rgba(245,206,120,.36),transparent);
+}
+
+.icon{
+width:30px;
+height:30px;
+flex-shrink:0;
+display:grid;
+place-items:center;
+border-radius:8px;
+background:rgba(245,206,120,.08);
+border:1px solid rgba(245,206,120,.15);
+color:var(--gold);
+font-family:'Barlow Condensed',sans-serif;
+font-size:15px;
+font-weight:800;
+}
+
+.service-text b{
+display:block;
+font-size:11px;
+font-weight:800;
+letter-spacing:.1px;
+}
+
+.service-text small{
+display:block;
+font-size:9px;
+color:#8995a8;
+margin-top:4px;
+}
+
+/* CTA */
+
+.cta-section{
+width:100%;
+margin-top:21px;
+text-align:center;
+}
+
+.cta-heading{
+font-family:'Barlow Condensed',sans-serif;
+font-size:23px;
+font-weight:800;
+letter-spacing:.6px;
+text-transform:uppercase;
+}
+
+.cta-heading span{
+color:var(--gold);
+}
+
+.cta-sub{
+font-size:10px;
+color:#9ca8b9;
+margin-top:5px;
+margin-bottom:15px;
+}
+
+.join-btn{
+position:relative;
+width:100%;
+height:59px;
+border:none;
+border-radius:11px;
+cursor:pointer;
+font-family:'DM Sans',sans-serif;
+font-weight:800;
+font-size:14px;
+letter-spacing:1.3px;
+color:#17120a;
+background:linear-gradient(110deg,#bc8738,#ffe4a0,#dba950,#ffe3a0);
+background-size:200% 100%;
+box-shadow:
+0 5px 25px rgba(230,170,64,.19),
+inset 0 1px 0 rgba(255,255,255,.65);
+animation:goldShift 4s ease infinite,buttonPulse 2.8s infinite;
+transition:transform .2s;
+}
+
+.join-btn:active{
+transform:scale(.97);
+}
+
+@keyframes goldShift{
+0%,100%{background-position:0% 50%}
+50%{background-position:100% 50%}
+}
+
+@keyframes buttonPulse{
+0%,100%{box-shadow:0 5px 20px rgba(230,170,64,.17)}
+50%{box-shadow:0 5px 32px rgba(230,170,64,.36)}
+}
+
+.below-btn{
+margin-top:12px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:6px;
+font-size:9px;
+font-weight:600;
+color:#8fa4b5;
+}
+
+.check{
+color:#61ddaf;
+}
+
+/* FOOTER */
+
+.footer{
+width:100%;
+margin-top:18px;
+text-align:center;
+}
+
+.footer-line{
+width:100%;
+height:1px;
+background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent);
+margin-bottom:11px;
+}
+
+.disclaimer{
+font-size:8px;
+line-height:1.6;
+color:#69768a;
+max-width:320px;
+margin:auto;
+}
+
+.copyright{
+font-size:8px;
+letter-spacing:1px;
+color:#59677b;
+margin-top:9px;
+font-weight:700;
+}
+
+/* SMALL DEVICES */
+
+@media(max-height:740px){
+
+.page{
+padding-top:12px;
+padding-bottom:12px;
+}
+
+.top{margin-bottom:7px}
+
+.logo-area{
+width:125px;
+height:125px;
+margin-bottom:7px;
+}
+
+.logo-wrap{
+width:90px;
+height:90px;
+}
+
+h1{
+font-size:44px;
+}
+
+.subtitle{
+margin-top:8px;
+}
+
+.divider{
+margin:12px 0;
+}
+
+.service{
+min-height:54px;
+padding:8px 10px;
+}
+
+.cta-section{
+margin-top:13px;
+}
+
+.cta-sub{
+margin-bottom:10px;
+}
+
+.join-btn{
+height:52px;
+}
+
+.footer{
+margin-top:11px;
+}
+
+}
+
+@media(max-height:640px){
+
+.logo-area{
+width:105px;
+height:105px;
+}
+
+.logo-wrap{
+width:77px;
+height:77px;
+}
+
+h1{
+font-size:39px;
+}
+
+.subtitle{
+font-size:10px;
+}
+
+.divider{
+margin:9px 0;
+}
+
+.services{
+gap:6px;
+}
+
+.service{
+min-height:48px;
+}
+
+.cta-heading{
+font-size:20px;
+}
+
+.footer{
+margin-top:8px;
+}
+
+}
+
+@media(prefers-reduced-motion:reduce){
+*,*:before,*:after{
+animation:none!important;
+scroll-behavior:auto!important;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<main class="page">
+
+<header class="top">
+
+<div class="brand-mini">
+K<span>B</span>P<span>.</span>
+</div>
+
+<div class="live">
+<span class="dot"></span>
+CRICKET INSIGHTS
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="logo-area">
+
+<div class="orbit"></div>
+<div class="orbit two"></div>
+
+<div class="logo-wrap">
+<img src="logo.png" alt="King Brand Predictions Logo">
+</div>
+
+</div>
+
+<div class="eyebrow">
+THE CRICKET COMMUNITY
+</div>
+
+<h1>
+KING BRAND
+<span>PREDICTIONS</span>
+</h1>
+
+<p class="subtitle">
+Your destination for <strong>Cricket Trading Discussions,</strong><br>
+Match Analysis &amp; Game-Day Insights.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<section style="width:100%">
+
+<p class="section-label">
+EXPLORE OUR COVERAGE
+</p>
+
+<div class="services">
+
+<div class="service">
+<div class="icon">01</div>
+<div class="service-text">
+<b>Cricket Trading</b>
+<small>Match Discussions</small>
+</div>
+</div>
+
+<div class="service">
+<div class="icon">02</div>
+<div class="service-text">
+<b>Toss Insights</b>
+<small>Pre-Match Updates</small>
+</div>
+</div>
+
+<div class="service">
+<div class="icon">03</div>
+<div class="service-text">
+<b>Session Analysis</b>
+<small>Game Observations</small>
+</div>
+</div>
+
+<div class="service">
+<div class="icon">04</div>
+<div class="service-text">
+<b>Cricket Analysis</b>
+<small>Match Breakdown</small>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="cta-section">
+
+<h2 class="cta-heading">
+ENTER THE <span>KING'S CIRCLE</span>
+</h2>
+
+<p class="cta-sub">
+Stay connected with the cricket conversation.
+</p>
+
+<button
+class="join-btn"
+type="button"
+onclick="window.open('https://t.me/+d0gnaUhdRZ1jYTA1','_blank')">
+JOIN KING BRAND CHANNEL
+</button>
+
+<div class="below-btn">
+<span class="check">✦</span>
+Explore insights &amp; community discussions
+</div>
+
+</section>
+
+<footer class="footer">
+
+<div class="footer-line"></div>
+
+<p class="disclaimer">
+Cricket content is shared for informational and discussion purposes only.
+No outcomes or financial returns are guaranteed. 18+
+</p>
+
+<p class="copyright">
+© KING BRAND PREDICTIONS
+</p>
+
+</footer>
+
+</main>
+
+</body>
+</html>
+```
